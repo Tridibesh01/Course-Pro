@@ -203,8 +203,7 @@ const Projects = () => {
               </a>
             </div>
             <div className="project-icon-2">
-              <a href="https://github.com/Tridibesh01/Simon-Game">
-                {/* <a href="https://tridibesh01.github.io/Simon-Game/"> */}
+              <a href="https://tridibesh01.github.io/Simon-Game/">
                 <button className="btn btn-primary">Demo</button>
               </a>
             </div>
