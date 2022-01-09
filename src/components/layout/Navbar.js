@@ -1,48 +1,50 @@
-import React from 'react';
-import logo from '../images/Group-3.svg';
+import React, { useState } from "react";
+// import Navbar from 'react-bootstrap/Navbar';
+import MenuIcon from "@mui/icons-material/Menu";
 
-const Navbar = () => {
+const NavBar = () => {
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY > 5) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
-    <div>
-      <nav className='navbar'>
-        <img
-          src={logo}
-          alt='brand-logo'
-          style={{
-            height: '55px',
-            width: '212px',
-            marginLeft: '3rem',
-            marginRight: '3rem',
-          }}
-        />
-        <ul>
-          <li
-            className='all-center'
-            style={{ marginLeft: '1rem', marginRight: '1rem' }}
-          >
-            <a className='text-bold' href='/' style={{ color: 'black' }}>
-              Login
-            </a>
-          </li>
-          <li
-            className='all-center'
-            style={{ marginLeft: '1rem', marginRight: '1rem' }}
-          >
-            <button
-              className='btn shadow text-italic'
-              style={{
-                color: 'white',
-                backgroundColor: '#01CB63',
-                borderRadius: '10px',
-              }}
-            >
-              Register
-            </button>
-          </li>
-        </ul>
-      </nav>
+    <div
+      className={
+        navbar
+          ? "navbar active all-center text-400"
+          : "navbar all-center text-400"
+      }
+    >
+      {/* <a href='' className='toggle-button'>
+        <MenuIcon style={{ fontSize: '35px' }} />
+      </a> */}
+      <ul>
+        <li className="navbar-item">
+          <a href="#home">Home</a>
+        </li>
+        <li className="navbar-item">
+          <a href="#about">About</a>
+        </li>
+        <li className="navbar-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li className="navbar-item">
+          <a href="#skills">Skills</a>
+        </li>
+        <li className="navbar-item">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;
