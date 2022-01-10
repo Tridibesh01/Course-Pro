@@ -58,7 +58,7 @@ const About = () => {
                 Contact
               </buttton>
             </a>
-            <a href="">
+            <a href="https://drive.google.com/file/d/1jQHkET6GIfprBqA3M2baGkZt44ToW_d0/view?usp=sharing">
               <buttton
                 data-aos="fade-up"
                 data-aos-delay="50"
