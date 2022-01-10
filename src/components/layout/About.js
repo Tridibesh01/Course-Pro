@@ -42,9 +42,9 @@ const About = () => {
             data-aos-once="true"
             className="text-grey"
           >
-            A 3rd Year student of IIT Kharagpur, India. I am proficient in Front
-            End Development with experience in Back End Technologies. I have
-            done projects on Mern Stack, UI/UX Designing and more.{" "}
+            A 3rd Year student of IIT Kharagpur, India. Proficient in Front End
+            Development with experience in Back End Technologies. Done projects
+            on Mern Stack, UI/UX Designing and more.{" "}
           </p>
           <div>
             <a href="#contact">
