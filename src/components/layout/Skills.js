@@ -35,8 +35,8 @@ const Skills = () => {
               <ul>
                 <li>HTML, CSS, Javascript</li>
                 <li>NodeJs, Express, MongoDB</li>
-                <li>React</li>
-                <li>UI/UX designing</li>
+                <li>ReactJS, Redux</li>
+                <li>UI/UX Designing</li>
               </ul>
             </div>
           </div>
